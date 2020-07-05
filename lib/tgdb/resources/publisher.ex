@@ -1,11 +1,9 @@
-defmodule Tgdb.Developers do
+defmodule Tgdb.Publisher do
   use Tgdb.Resource
 
   def get_all(params \\ [], opts \\ []) do
     get("", "v1", params, opts)
   end
-
-  def resource_collection_name, do: "Developers"
 
   def supported_endpoints do
     %{
