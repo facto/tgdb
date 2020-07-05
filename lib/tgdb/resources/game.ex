@@ -60,7 +60,6 @@ defmodule Tgdb.Game do
 
   def required_params("Updates", "v1") do
     ~w(
-      last_edit_id
     )a
   end
 
@@ -101,6 +100,7 @@ defmodule Tgdb.Game do
 
   def optional_params("Updates", "v1") do
     ~w(
+      last_edit_id
       time
       page
     )a
